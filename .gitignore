@@ -1,0 +1,24 @@
+.gradle/
+/.idea/
+/local.properties
+/build/
+/app/build/
+/**/build/
+.DS_Store
+.gradle
+/.gradle
+/.idea/
+*.iml
+*.keystore
+# Android specific
+captures/
+externalNativeBuild/
+
+# Archive folder created by maintenance
+/archive/
+
+# Ignore original wrapper copies in Tea (we archived the scripts)
+/Tea/gradlew
+/Tea/gradlew.bat
+/Tea/gradle/wrapper/gradle-wrapper.jar
+
