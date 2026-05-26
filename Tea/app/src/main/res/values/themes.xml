@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.TeaInfoapp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary Color -->
+        <item name="colorPrimary">@color/primary_teal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_teal</item>
+
+        <!-- Secondary Color -->
+        <item name="colorSecondary">@color/secondary_purple</item>
+        <item name="colorSecondaryVariant">@color/secondary_dark_purple</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Surface Colors -->
+        <item name="android:colorBackground">@color/surface_light</item>
+
+        <!-- Error Color -->
+        <item name="colorError">@color/error_red</item>
+    </style>
+
+    <style name="Theme.TeaInfoapp" parent="Base.Theme.TeaInfoapp" />
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Green Tea Inspired (Matching user request image) -->
+    <color name="primary_teal">#688E23</color>
+    <color name="primary_light_teal">#9ACD32</color>
+    <color name="primary_dark_teal">#4B6319</color>
+
+    <!-- Secondary Colors - Gold/Olive -->
+    <color name="secondary_purple">#CFAD6E</color>
+    <color name="secondary_light_purple">#E0C79A</color>
+    <color name="secondary_dark_purple">#B08D4B</color>
+
+    <!-- Tertiary Colors - Tea Leaves -->
+    <color name="tertiary_amber">#1FA67C</color>
+    <color name="tertiary_light_amber">#2ED9A3</color>
+
+    <!-- Neutral Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_bg">#1E1E1E</color>
+    <color name="surface_light">#F5F5F5</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="border_soft">#EBEBEB</color>
+    <color name="text_primary">#1E1E1E</color>
+    <color name="text_secondary">#4B6319</color>
+    <color name="text_tertiary">#688E23</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#6B8E23</color>
+    <color name="error_red">#C1440E</color>
+    <color name="warning_orange">#E8956F</color>
+    <color name="info_blue">#8B7355</color>
+
+    <!-- Gradients (used in drawables) -->
+    <color name="gradient_start">#688E23</color>
+    <color name="gradient_end">#1FA67C</color>
+    <color name="gradient_tertiary">#CFAD6E</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_light">#FFFFFF1A</color>
+    <color name="overlay_dark">#0000001A</color>
+</resources>

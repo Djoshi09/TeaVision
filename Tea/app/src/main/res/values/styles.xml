@@ -1,0 +1,19 @@
+<resources>
+    <style name="TextAppearance.Tea.HeroTitle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.Tea.SectionTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">@dimen/text_heading</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_dark_teal</item>
+    </style>
+
+    <style name="Widget.Tea.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/radius_2xl</item>
+        <item name="cardElevation">8dp</item>
+    </style>
+</resources>
+
