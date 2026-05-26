@@ -173,6 +173,18 @@ Notes:
 - When replacing or retraining models, keep the same filename or update the code that loads the model in the app.
 - Large model files increase APK size — consider using Android App Bundles or model downloads at runtime if size matters.
 
+### Nutrition & Health Data
+
+After a successful scan the app attempts to show nutrition facts and a short summary of known health benefits for the identified tea or product. This feature is implemented as a local lookup first, with optional online enrichment when network access is enabled.
+
+- Data location: `app/src/main/assets/nutrition_db.csv` (optional) and `app/src/main/assets/health_benefits.csv` are used by the app for offline lookups. Each CSV row should include an identifier (barcode or normalized label), serving size, calories, macronutrients (per serving), and a short plain-text health summary.
+- Lookup flow: prefer barcode lookup when available, otherwise map the top predicted label to a nutrition entry. If no local entry exists and online lookup is enabled the app will attempt a remote enrichment (user-controlled setting).
+- UI: the Scan Result screen shows a Nutrition panel (serving size, calories, macronutrients) and a Health Benefits panel (2–4 short bullets). Confidence and data source (local vs online) are displayed.
+- Offline & privacy: all local lookups run on-device. Online queries are only performed if the user enables them; users can disable network enrichment in Settings.
+- Updating the database: to extend or correct entries, update the CSV files in `app/src/main/assets/` and rebuild. For dynamic updates, implement an optional sync endpoint that writes into the app's private storage (respect user consent).
+
+Disclaimer: nutrition and health information is provided for convenience only. It may be approximate and should not be taken as medical advice. Include a short disclaimer in-app and in the README when publishing the app.
+
 ## Run the App
 
 - From Android Studio: Choose the `app` module and run on a connected device or emulator.
