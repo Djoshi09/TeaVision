@@ -6,6 +6,8 @@ TeaVision (also referred to as TeaInfoapp) is an Android application for tea sca
 
 TeaVision is a mobile-first, on-device tea recognition and analytics app focused on privacy, speed, and offline capability. It lets users quickly capture a tea package or leaf sample with the camera, identifies the tea variety using a TensorFlow Lite model, and stores each scan locally for history and analytics. Key design goals are accuracy for common tea classes, minimal latency on-device inference, and a clear consumer workflow for scanning, confirming, and saving results.
 
+After each scan the app shows nutrition facts and a short summary of known health benefits for the identified tea or product, using local data with optional online enrichment when enabled.
+
 Core architecture and flow:
 
 - Camera capture: Uses CameraX to provide a stable preview and capture pipeline with automatic focus and exposure. The UI guides the user to position items within a scan frame.
